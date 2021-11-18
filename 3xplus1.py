@@ -1,5 +1,5 @@
 # 3X + 1
-import math, time, sys
+import math, time
 print("""
               ┌─────────────────────────┐
               │ Witaj w programie 3x+1! │
