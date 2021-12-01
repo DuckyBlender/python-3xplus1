@@ -1,4 +1,3 @@
-# 3X + 1
 import math, time
 print("""
               ┌─────────────────────────┐
@@ -13,7 +12,7 @@ firstInput = input("Podaj liczbę, lub napisz \"ALL\": ")
 times = 0
 max = 0
 
-if firstInput.strip().isdigit():
+if firstInput.isdigit():
     temp = int(firstInput)
     while True:
         if temp % 2 == 0:
@@ -21,7 +20,7 @@ if firstInput.strip().isdigit():
             times = times + 1
             if temp >= max:
                 max = temp
-            print("Liczba: " + str(math.trunc(temp)) + " | Kroki: " + str(math.trunc(times)) + " | Max: " + str(math.trunc(max)) + " | -")
+            print("Liczba: " + str(int(temp)) + " | Kroki: " + str(int(times)) + " | Max: " + str(int(max)) + " | -")
             if (math.trunc(temp)) == 1:
                 break
         if temp % 2 == 1:
@@ -29,13 +28,13 @@ if firstInput.strip().isdigit():
             times = times + 1
             if temp >= max:
                 max = temp
-            print("Liczba: " + str(math.trunc(temp)) + " | Kroki: " + str(math.trunc(times)) + " | Max: " + str(math.trunc(max)) + " | +")
-            if (math.trunc(temp)) == 1:
+            print("Liczba: " + str(int(temp)) + " | Kroki: " + str(int(times)) + " | Max: " + str(int(max)) + " | +")
+            if int(temp) == 1:
                 break
 else:
     if firstInput.upper() == "ALL":
         secondInput = input("Ile liczb sprawdzić? Napisz \"INF\", aby spradzić naknajwięcej: ")
-        if secondInput.strip().isdigit():
+        if secondInput.isdigit():
             maxNumber = int(secondInput)
             number = int(1)
             temp = number
@@ -45,8 +44,8 @@ else:
                     times = times + 1
                     if temp >= max:
                         max = temp
-                    if (math.trunc(temp)) == 1:
-                        print("Liczba: " + str(math.trunc(number)) + " | Kroki: " + str(math.trunc(times)) + " | Max: " + str(math.trunc(max)))
+                    if int(temp) == 1:
+                        print("Liczba: " + str(int(number)) + " | Kroki: " + str(int(times)) + " | Max: " + str(int(max)))
                         max = 0
                         times = 0
                         number = number + 1
@@ -56,8 +55,8 @@ else:
                     times = times + 1
                     if temp >= max:
                         max = temp
-                    if (math.trunc(temp)) == 1:
-                        print("Liczba: " + str(math.trunc(number)) + " | Kroki: " + str(math.trunc(times)) + " | Max: " + str(math.trunc(max)))
+                    if int(temp) == 1:
+                        print("Liczba: " + str(int(number)) + " | Kroki: " + str(int(times)) + " | Max: " + str(int(max)))
                         max = 0
                         times = 0
                         number = number + 1
@@ -74,8 +73,8 @@ else:
                         times = times + 1
                         if temp >= max:
                             max = temp
-                        if (math.trunc(temp)) == 1:
-                            print("Liczba: " + str(math.trunc(number)) + " | Kroki: " + str(math.trunc(times)) + " | Max: " + str(math.trunc(max)))
+                        if (int(temp)) == 1:
+                            print("Liczba: " + str(int(number)) + " | Kroki: " + str(int(times)) + " | Max: " + str(int(max)))
                             max = 0
                             times = 0
                             number = number + 1
@@ -85,8 +84,8 @@ else:
                         times = times + 1
                         if temp >= max:
                             max = temp
-                        if (math.trunc(temp)) == 1:
-                            print("Liczba: " + str(math.trunc(number)) + " | Kroki: " + str(math.trunc(times)) + " | Max: " + str(math.trunc(max)))
+                        if (int(temp)) == 1:
+                            print("Liczba: " + str(int(number)) + " | Kroki: " + str(int(times)) + " | Max: " + str(int(max)))
                             max = 0
                             times = 0
                             number = number + 1
