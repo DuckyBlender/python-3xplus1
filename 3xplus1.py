@@ -5,7 +5,7 @@ print("""
 ┌─────────────┴─────────────────────────┴───────────────────┐ ┌───────────────────────────────────────────────────────────┐ ┌──────────────────────────────┐
 │                       ZASADY                              │ │                       UŻYWANIE                            │ │       3x + 1 CALCULATOR      │
 │ 1. Jeśli liczba jest parzysta to się dzieje 3x + 1.       │ │ 1. Napisz liczbę, ktora ma być obliczona.                 │ │ Autor: DuckyBlender          │
-│ 2. Jeśli liczba jest nieparzysta to się dzieli razy dwa.  │ │ 2. Jeśli wszystkie liczby po kolei sprawdzić, wpisz "ALL" │ │ Wersja: Release 2.0          │
+│ 2. Jeśli liczba jest nieparzysta to się dzieli razy dwa.  │ │ 2. Jeśli wszystkie liczby po kolei sprawdzić, wpisz "ALL" │ │ Wersja: Release 2.2          │
 │ Założenie jest takie, że każda liczba dojdzie do 1.       │ │ 3. Po wpiseniu "ALL" napisz ilość liczb, lub napisz "INF" │ │ Data: 18.11.2021             │
 └───────────────────────────────────────────────────────────┘ └───────────────────────────────────────────────────────────┘ └──────────────────────────────┘""")
 firstInput = input("Podaj liczbę, lub napisz \"ALL\": ")
